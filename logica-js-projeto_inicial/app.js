@@ -1,12 +1,13 @@
 alert('Welcome'); 
-let numberSecret = parseInt(Math.random() * 100 + 1 );  
+let numberMax = 30000; 
+let numberSecret = parseInt(Math.random() * numberMax + 1 );  
 
 let guessNumber= 0;
 let attempts = 1;
 
 while(guessNumber != numberSecret){
 
-    guessNumber = prompt('Chose a number between 1 and 100');
+    guessNumber = prompt(`Chose a number between 1 and ${numberMax}`);
 
 
     if(guessNumber== numberSecret) {
